@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.bottom_sheet_player.*
 import kotlinx.android.synthetic.main.bottom_sheet_player.view.*
+import androidx.viewpager.widget.ViewPager
+import kotlinx.android.synthetic.main.activity_main_content.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +25,10 @@ class MainActivity : AppCompatActivity() {
 //        // specify an adapter (see also next example)
 //        val mAdapter = ListAdapter(list)
 //        recyclerView.adapter = mAdapter
+
+
+        val list = mutableListOf(User("Kavan", "Mevada"), User("Damini", "Tripathi"))
+        viewPager.adapter = CustomPagerAdapter(list)
 
 
 
