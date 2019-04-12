@@ -17,7 +17,7 @@
 
 
         <!--Google Theming-->
-        <item name="textAppearanceSubhead1">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+        <item name="textAppearanceSubhead1">@style/TextAppearance.GoogleMaterial.Subhead1</item>
     </style>
 
     <style name="Widget.Material.Button.UnelevatedButton" parent="TextAppearance.AppCompat.Button">
@@ -28,5 +28,14 @@
         <item name="android:fontFamily">@font/product_sans_regular</item>
     </style>
 
+
+    <style name="TextAppearance.GoogleMaterial.Subhead1" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="fontFamily">@font/google_sans_medium</item>
+    </style>
 
 </resources>
