@@ -31,7 +31,11 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
-    implementation 'elementx.bottomsheet:bottomsheet:1.0.1'
+    implementation 'elementx.bottomsheet:bottomsheet:1.0.3'
+    implementation 'elementx.playback:playback:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'androidx.media2:media2:1.0.0-alpha04'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.0'
+    //implementation project(path:':playback')
 }

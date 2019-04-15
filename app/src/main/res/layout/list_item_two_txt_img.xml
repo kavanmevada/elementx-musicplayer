@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
-        <variable name="user" type="elementx.test.musicplayer.User"/>
+        <variable name="mediaItem" type="elementx.media.models.MediaItem"/>
     </data>
 
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="?selectableItemBackground"
+            android:padding="16dip">
 
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{user.firstName}"
-        />
+                style="@style/TextAppearance.AppTheme.Subtitle2"
+                android:text="@{mediaItem.title}"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                style="@style/TextAppearance.AppTheme.Body2"
+                android:text="@{mediaItem.artist}"/>
 
     </LinearLayout>
+
+
 
 </layout>

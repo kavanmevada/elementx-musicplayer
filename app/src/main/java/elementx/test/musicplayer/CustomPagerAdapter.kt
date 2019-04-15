@@ -1,22 +1,26 @@
 package elementx.test.musicplayer
 
 import android.content.Context
+import android.provider.MediaStore
+import android.support.v4.media.session.MediaSessionCompat
 import android.util.AttributeSet
-import android.view.ViewGroup
 import android.view.LayoutInflater
-import android.view.MotionEvent
 import android.view.View
+import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
-import elementx.test.musicplayer.databinding.ListItemTwoTxtImgBinding
 import elementx.test.musicplayer.databinding.NowplayingItemViewBinding
 
 
-class CustomPagerAdapter(val list: MutableList<User>) : PagerAdapter() {
+class CustomPagerAdapter(val list: MutableList<MediaSessionCompat.QueueItem>) : PagerAdapter() {
 
     override fun instantiateItem(collection: ViewGroup, position: Int): Any {
         val binding = NowplayingItemViewBinding.inflate(LayoutInflater.from(collection.context), collection, false)
-        binding.user = list[position]
+        binding.artwork.setImageBitmap(MediaStore.Images.Media.getBitmap(
+            collection.context.contentResolver,
+            list[position].description.iconUri
+        ))
+        binding.queueItem = list[position]
         collection.addView(binding.root)
         return binding.root
     }

@@ -8,7 +8,7 @@
             <item>
                 <shape android:shape="rectangle">
                     <corners android:radius="6dip"/>
-                    <solid android:color="@android:color/white"/>
+                    <solid android:color="#ff1967d2"/>
                     <padding android:left="16dp"
                              android:top="@dimen/abc_button_padding_vertical_material"
                              android:right="16dp"

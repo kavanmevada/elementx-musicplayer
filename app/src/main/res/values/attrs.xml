@@ -1,18 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <declare-styleable name="CustomImageView">
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="autoHeight" format="float"/>
+        <attr name="autoWidth" format="float"/>
+        <attr name="isCircular" format="boolean"/>
+        <attr name="gradientView" format="boolean"/>
+    </declare-styleable>
 
 
-    <!--Google Material Text Styles-->
-    <attr name="textAppearanceBody1" format="reference" />
-    <attr name="textAppearanceBody2" format="reference" />
+    <!--Google Styles-->
+    <attr name="positiveButton" format="reference" />
+    <attr name="negativeButton" format="reference" />
+
+
+    <attr name="textAppearanceHeadline1" format="reference" />
+    <attr name="textAppearanceHeadline2" format="reference" />
+    <attr name="textAppearanceHeadline3" format="reference" />
+    <attr name="textAppearanceHeadline4" format="reference" />
+    <attr name="textAppearanceHeadline5" format="reference" />
+    <attr name="textAppearanceHeadline6" format="reference" />
+    <attr name="textAppearanceSubhead1" format="reference" />
+    <attr name="textAppearanceSubhead2" format="reference" />
+    <attr name="textAppearanceSubtitle1" format="reference"/>
+    <attr name="textAppearanceSubtitle2" format="reference"/>
+    <attr name="textAppearanceBody1" format="reference"/>
+    <attr name="textAppearanceBody2" format="reference"/>
+    <attr name="textAppearanceButton" format="reference" />
+    <attr name="textAppearanceCaption" format="reference" />
+    <attr name="textAppearanceOverline" format="reference" />
+
+
     <attr name="textAppearanceDisplay1" format="reference" />
     <attr name="textAppearanceDisplay2" format="reference" />
     <attr name="textAppearanceDisplay3" format="reference" />
-    <attr name="textAppearanceSubhead1" format="reference" />
-    <attr name="textAppearanceSubhead2" format="reference" />
+    <attr name="textAppearanceLargePopupMenu" format="reference" />
+    <attr name="textAppearanceListItem" format="reference" />
+    <attr name="textAppearanceListItemSecondary" format="reference" />
+    <attr name="textAppearanceListItemSmall" format="reference" />
+
+    <attr name="textAppearancePopupMenuHeader" format="reference" />
+    <attr name="textAppearanceSearchResultSubtitle" format="reference" />
+    <attr name="textAppearanceSearchResultTitle" format="reference" />
+    <attr name="textAppearanceSmallPopupMenu" format="reference" />
+
     <attr name="textAppearanceSubtitleAlt1" format="reference" />
     <attr name="textAppearanceSubtitleAlt2" format="reference" />
-
 
 
 </resources>
